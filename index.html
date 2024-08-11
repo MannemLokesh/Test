@@ -2,32 +2,185 @@
 <html>
   <head>
     <title>All PDF Files List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $(".cards-div").hide();
+
+          $('.menu-title').click(function() {
+              $(`#${$(this).attr('class').split(" ")[1]}`).toggle();
+          });
+      });
+    </script>
   </head>
-<body>
-  <div class="container">
-  <nav>
-    <input id="toggle" type="checkbox">
-    <h2 id="menu-title">Core Java</h2>
-    <ul>
-      <li>
-        
-        <div class="dropdown-content" id="java-content">
-          <div class="card">JDBC</div>
-          <div class="card">Multithreading</div>
-          <div class="card">Collections</div>
-          <div class="card">Streams</div>
-          <div class="card">Lambda Expressions</div>
+  <body>
+    <a href="https://cloudconvert.com/pdf-to-html" target="_blank" >To Convert PDF to Html File, Click Here..</a>
+    <div class="main">
+      <div class="div-menu-title">
+        <h4 class="menu-title about">ABOUT LOKESH MANNEM</h2>
+      </div>
+
+      <div class="cards-div" id="about">
+        <div class="card">
+          <h5>What is Java?</h5>
+          <p class="scrollable-paragraph">
+            Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+            Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/WhatIsJava.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
         </div>
-      </li>
-    </ul>
-  </nav>
-</div>
-<!--
-  <a href="https://cloudconvert.com/pdf-to-html" target="_blank">To Convert PDF to Html File, Click Here..</a>
-  <h1>Core Java</h1>
-  <a href="https://mannemlokesh.github.io/learning/11%20Operators%20in%20java.html" target="_blank">11. Operators in Java</a>
--->
-</body>
+
+        <div class="card">
+          <h5>History of Java</h5>
+          <p class="scrollable-paragraph">
+            The history of Java is very interesting. Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was best suited for internet programming. Later, Java technology was incorporated by Netscape. The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.    
+          </p>
+
+          <a class="doc-git" href="/CoreJava/HistoryOfJava.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="div-menu-title">
+        <h4 class="menu-title core-java">Core Java</h2>
+      </div>
+
+      <div class="cards-div" id="core-java">
+        <div class="card">
+          <h5>What is Java?</h5>
+          <p class="scrollable-paragraph">
+            Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+            Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/WhatIsJava.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+        <div class="card">
+          <h5>History of Java</h5>
+          <p class="scrollable-paragraph">
+            The history of Java is very interesting. Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was best suited for internet programming. Later, Java technology was incorporated by Netscape. The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.    
+          </p>
+
+          <a class="doc-git" href="/CoreJava/HistoryOfJava.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+        <div class="card">
+          <h5>Features of Java</h5>
+          <p class="scrollable-paragraph">
+            The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/FeaturesOfJava.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+        <div class="card">
+          <h5>First Java Program Hello world Example</h5>
+          <p class="scrollable-paragraph">
+            In this section, we will learn how to write the simple program of Java. We can write a 
+            simple hello Java program easily after installing the JDK. 
+            To create a simple Java program, you need to create a class that contains the main 
+            method. Let's understand the requirement first. For executing any Java program, the following software or application must be properly installed.
+            Install the JDK if you don't have installed it, download the JDK and install it.
+            Set path of the jdk/bin directory. http://www.javatpoint.com/how-to-set-path-in-java.
+            Create the Java program.
+            Compile and run the Java program.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/FirstJavaProgramHelloworldExample.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+        
+        <div class="card">
+          <h5>Internal Details of Hello Java Program</h5>
+          <p class="scrollable-paragraph">
+            In the previous section, we have created Java Hello World program and learn how to 
+            compile and run a Java program. In this section, we are going to learn, what happens while we 
+            compile and run the Java program. Moreover, we will see some questions based on the first 
+            program.
+            What happens at compile time? 
+            At compile time, the Java file is compiled by Java Compiler (It does not interact with 
+            OS) and converts the Java code into bytecode.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/InternalDetailsOfHelloJavaProgram.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+        <div class="card">
+          <h5>JDK JVM JRE</h5>
+          <p class="scrollable-paragraph">
+            We must understand the differences between JDK, JRE, and JVM before proceeding further to Java. 
+            See the brief overview of JVM here.
+            If you want to get the detailed knowledge of Java Virtual Machine, move to the next page. 
+            Firstly, let's see the differences between the JDK, JRE, and JVM.
+            JVM (Java Virtual Machine) is an abstract machine. 
+            It is called a virtual machine because it doesn't physically exist. 
+            It is a specification that provides a runtime environment in which Java bytecode can be executed. 
+            It can also run those programs which are written in other languages and compiled to Java bytecode.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/JDK JVM JRE.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+
+        <div class="card">
+          <h5>Java Variables</h5>
+          <p class="scrollable-paragraph">
+            A variable is a container which holds the value while the Java program is executed. 
+            A variable is assigned with a data type.
+            Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+            There are two types of data types in Java: primitive and non-primitive.
+            A variable is the name of a reserved area allocated in memory. 
+            In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.
+          </p>
+
+          <a class="doc-git" href="/CoreJava/JavaVariables.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+        
+        <div class="card">
+          <h5>Data types in Java</h5>
+          <p class="scrollable-paragraph">
+            Data types specify the different sizes and values that can be stored in the variable. 
+            There are two types of data types in Java:
+            Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+            Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+            In Java language, primitive data types are the building blocks of data manipulation. 
+            These are the most basic data types available in Java language.
+            There are 8 types of primitive data types:
+          </p>
+
+          <a class="doc-git" href="/CoreJava/DataTypesInJava.html" target="_blank">Documentation</a>
+          <p></p> 
+          <a class="doc-git" href="#">Github Examples</a>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+  </body>
 </html>
